@@ -1,0 +1,24 @@
+<div class="container-fluid mt-3" style="height: 450px;">
+	<mat-card class="example-card">
+		<mat-card-header class="d-flex justify-content-between">
+		  <div mat-card-avatar class="me-3 example-header-image">
+			<!-- <img src="../../assets/adminman.png" width="140" alt=""> -->
+            <mat-divider [vertical]="true" class="m-lg-2"></mat-divider>
+
+		  </div>
+		  <div class="text-center">
+			<mat-card-title *matCellDef="let row">{{row.name}}</mat-card-title>
+		  	<mat-card-subtitle *matCellDef="let row">{{row.position}}</mat-card-subtitle>
+		  </div>
+		</mat-card-header>
+		<!-- <img mat-card-image src="" alt="Photo of a Shiba Inu"> -->
+		<mat-card-content *matCellDef="let row">
+			{{row.price}}.00 
+		</mat-card-content>
+		<!-- <mat-card-actions>
+		  <button mat-button>LIKE</button>
+		  <button mat-button>SHARE</button>
+		</mat-card-actions> -->
+	</mat-card>
+	  
+</div>

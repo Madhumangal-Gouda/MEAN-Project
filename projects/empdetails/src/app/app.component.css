@@ -1,0 +1,46 @@
+body{
+  overflow-x: hidden;
+}
+.example-spacer {
+	flex: 1 1 auto;
+  }
+  table {
+	width: 100%;
+  }
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    }
+    th{
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    td, th {
+    width: 15%;
+  
+    }
+ 
+    /*Effect for  Sidenav */
+    .imgdashboard{
+      border: 2px solid ;
+      box-shadow: 1px 1px 1px 1px 5px white;
+    }
+    mat-sidenav{
+      background-color: #4e73df;
+      /* color: white; */
+      position: fixed;
+    }
+    .sidedashboard{
+      color: white;
+    }
+    mat-nav-list{
+      color: rgb(236, 227, 227);
+    }
+    mat-nav-list:hover{
+      color: rgb(255, 255, 255);
+    }
+
+  .example-header-image{
+    background-image: url('../assets/adminman.png');
+    background-size: cover;
+  }

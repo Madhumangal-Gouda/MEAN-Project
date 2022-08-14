@@ -1,0 +1,113 @@
+<div class="p-2 d-flex justify-content-between" mat-dialog-action >
+	<h1 mat-dialog-title>Employee Register Form</h1>
+	<button mat-icon-button mat-dialog-close >
+		<mat-icon>close</mat-icon>
+	</button>
+</div>
+
+<div mat-dialog-content>
+	<form [formGroup]="employeeForm">
+		<p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>Name</mat-label>
+				 <mat-icon matPrefix></mat-icon>
+				<input formControlName="name" matInput placeholder="Madhu">
+			 </mat-form-field>
+		</p>
+		<!-- <p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>Employee Id</mat-label>
+				 <mat-icon matPrefix></mat-icon>
+				<input formControlName="employeeId" type="text" matInput placeholder="Developer">
+			 </mat-form-field>
+		</p> -->
+		<!-- <p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>LastName</mat-label>
+				 <mat-icon matPrefix></mat-icon>
+				<input formControlName="lastName" matInput placeholder="Gouda">
+			 </mat-form-field>
+		</p> -->
+		<!-- <table class="example-full-width"  cellspacing="0"><tr>
+			<td>
+				<mat-form-field class="example-full-width" appearance="outline">
+					<mat-label>First name</mat-label>
+					<mat-icon matPrefix>perm_identity</mat-icon>
+					<input formControlName="firstName" matInput placeholder="Madhumangal">
+				</mat-form-field></td>
+			<td>
+				<mat-form-field class="example-full-width" appearance="outline">
+					<mat-icon matPrefix>perm_identity</mat-icon>
+					<mat-label>Last Name</mat-label>
+					<input formControlName="lastName" matInput placeholder="Gouda">
+				</mat-form-field></td>
+		  </tr>
+		</table> -->
+		<p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>Position</mat-label>
+				 <mat-icon matPrefix></mat-icon>
+				<input formControlName="position" matInput placeholder="Developer">
+			 </mat-form-field>
+		</p>
+		
+		<p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>Salary</mat-label>
+				 <mat-icon matPrefix></mat-icon>
+				<input formControlName="price" matInput placeholder="Developer">
+			 </mat-form-field>
+		</p>
+		
+	
+		<!-- <p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>DOB</mat-label>
+				<input formControlName="employeeDob" matInput [matDatepicker]="picker">
+				<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+				<mat-datepicker #picker></mat-datepicker>
+			 </mat-form-field>
+		</p> -->
+		<p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>Office List</mat-label>
+				 <mat-select formControlName="officename" placeholder="Catergories">
+					<mat-option value="Hyderabad">Hyderabad</mat-option>
+					<mat-option value="Bhubaneswar">Bhubaneswar</mat-option>
+					<mat-option value="Mumbai">Mumbai</mat-option>
+					<mat-option value="Bangalor">Bangalor</mat-option>
+				</mat-select>
+			 </mat-form-field>
+		</p>
+	
+		<!-- <p>
+			<mat-form-field class="example-full-width" appearance="outline">
+				<mat-label>Salary</mat-label>
+				 <mat-icon matPrefix></mat-icon>
+				<input formControlName="salary" type="number" matInput placeholder="20000/-">
+			 </mat-form-field>
+		</p>
+	
+		<p>
+			<mat-label>Your Role in Company</mat-label><br>
+			<mat-radio-group formControlName="role" class="matgroup">
+				<mat-radio-button  class="matlist" *ngFor="let role of rolelist" [value]="role" >
+					{{role}}
+				</mat-radio-button>
+			</mat-radio-group>
+		</p> -->
+	</form>	
+</div>
+<div class="p-2" mat-dialog-action [align]="'end'">
+	<button class="me-3" mat-raised-button color="warn" mat-dialog-close>
+		Close
+	</button>
+	<button class="me-3" (click)="addProduct()" mat-raised-button color="primary" >
+		{{actionButton}}
+	</button>
+		
+	
+</div>
+
+
+
